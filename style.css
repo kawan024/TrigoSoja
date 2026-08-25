@@ -1,1 +1,199 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: beige;
+    color: #000;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+
+/* Imagem do cabeçalho */
+.cabecalho-imagem {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+
+/* Marca */
+.cabecalho-marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Subtítulo */
+.cabecalho-subtitulo {
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Título */
+.cabecalho-titulo {
+    color: #356b2f;
+    font-size: 28px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.cabecalho-lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cabecalho-lista-item {
+    display: block;
+}
+
+.cabecalho a {
+    color: #000;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.cabecalho a:hover {
+    background-color: #356b2f;
+    color: #fff;
+}
+
+
+/* =========================
+   BOTÃO DE TEMA
+========================= */
+
+.botao-tema {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #356b2f;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.botao-tema:hover {
+    background-color: #23491f;
+}
+
+
+/* =========================
+   GALERIA
+========================= */
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+
+/* Card de cada imagem */
+.galeria-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* TODAS AS IMAGENS FICAM DO MESMO TAMANHO */
+.galeria-imagem {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Legenda */
+.galeria-legenda {
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+#contato {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecalho-marca {
+        flex-direction: column;
+    }
+
+    .cabecalho-lista {
+        flex-direction: column;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
