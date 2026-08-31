@@ -13,6 +13,9 @@ body {
     line-height: 1.6;
     background-color: beige;
     color: #000;
+
+    /* Transição do tema */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
@@ -29,6 +32,9 @@ body {
     gap: 20px;
     padding: 12px 20px;
     border-radius: 5px;
+
+    /* Transição do tema */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
@@ -54,6 +60,8 @@ body {
 .cabecalho-subtitulo {
     font-size: 14px;
     color: #555;
+
+    transition: color 0.3s ease;
 }
 
 
@@ -93,6 +101,8 @@ body {
     gap: 8px;
     padding: 6px 8px;
     border-radius: 4px;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cabecalho a:hover {
@@ -113,10 +123,14 @@ body {
     color: #fff;
     cursor: pointer;
     font-size: 14px;
+
+    transition: background-color 0.3s ease, color 0.3s ease,
+                transform 0.2s ease;
 }
 
 .botao-tema:hover {
     background-color: #23491f;
+    transform: scale(1.05);
 }
 
 
@@ -142,8 +156,10 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
-    /* Movimento suave do card */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Movimento suave */
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background-color 0.3s ease;
 }
 
 
@@ -178,6 +194,8 @@ body {
     text-align: center;
     color: #000;
     font-weight: bold;
+
+    transition: color 0.3s ease;
 }
 
 
@@ -188,6 +206,70 @@ body {
 #contato {
     padding: 40px 20px;
     text-align: center;
+}
+
+
+/* =========================
+   TEMA ESCURO
+========================= */
+
+body.tema-escuro {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+
+/* Cabeçalho no tema escuro */
+body.tema-escuro .cabecalho {
+    background-color: #252525;
+    color: #fff;
+}
+
+
+/* Subtítulo no tema escuro */
+body.tema-escuro .cabecalho-subtitulo {
+    color: #ccc;
+}
+
+
+/* Título no tema escuro */
+body.tema-escuro .cabecalho-titulo {
+    color: #5fa854;
+}
+
+
+/* Menu no tema escuro */
+body.tema-escuro .cabecalho a {
+    color: #fff;
+}
+
+body.tema-escuro .cabecalho a:hover {
+    background-color: #356b2f;
+    color: #fff;
+}
+
+
+/* Cards no tema escuro */
+body.tema-escuro .galeria-card {
+    background-color: #2b2b2b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Legenda no tema escuro */
+body.tema-escuro .galeria-legenda {
+    color: #fff;
+}
+
+
+/* Botão no tema escuro */
+body.tema-escuro .botao-tema {
+    background-color: #f0c419;
+    color: #000;
+}
+
+body.tema-escuro .botao-tema:hover {
+    background-color: #d4aa00;
 }
 
 

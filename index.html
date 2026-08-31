@@ -42,8 +42,9 @@
             </ul>
         </nav>
 
+        <!-- BOTÃO DO TEMA -->
         <button class="botao-tema" id="botao-tema" type="button">
-            🫡 Tema
+            🌙 Tema escuro
         </button>
 
     </header>
@@ -127,6 +128,39 @@
         </div>
 
     </section>
+
+
+    <!-- =========================
+         SCRIPT DO TEMA
+    ========================= -->
+
+    <script>
+
+        // Pega o botão do tema
+        const botaoTema = document.getElementById("botao-tema");
+
+        // Quando clicar no botão
+        botaoTema.addEventListener("click", function() {
+
+            // Ativa ou desativa o tema escuro
+            document.body.classList.toggle("tema-escuro");
+
+            // Verifica qual tema está ativo
+            if (document.body.classList.contains("tema-escuro")) {
+
+                // Tema escuro
+                botaoTema.textContent = "☀️ Tema claro";
+
+            } else {
+
+                // Tema claro
+                botaoTema.textContent = "🌙 Tema escuro";
+
+            }
+
+        });
+
+    </script>
 
 </body>
 </html>
