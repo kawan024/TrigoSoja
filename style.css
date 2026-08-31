@@ -141,6 +141,16 @@ body {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    /* Movimento suave do card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Card se movimenta ao passar o mouse */
+.galeria-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -150,6 +160,15 @@ body {
     height: 200px;
     object-fit: cover;
     display: block;
+
+    /* Movimento suave da imagem */
+    transition: transform 0.4s ease;
+}
+
+
+/* Imagem aumenta ao passar o mouse */
+.galeria-card:hover .galeria-imagem {
+    transform: scale(1.08);
 }
 
 
